@@ -1,0 +1,86 @@
+.cta-section {
+  padding: 10px 80px 60px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-box {  
+  width: 100%;
+  max-width: 1000px;
+  padding: 80px;
+  border-radius: 28px;
+  text-align: center;
+  color: #fff;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 144, 47, 0.095),
+    rgba(255, 255, 255, 0.04)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.cta-box h2 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cta-box p {
+  font-size: 1.05rem;
+  opacity: 0.8;
+  max-width: 620px;
+  margin: 0 auto 36px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-primary {
+  background: #ff902f;
+  color: #ffffff;
+  border: none;
+  padding: 14px 30px;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.cta-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 14px 30px;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.cta-primary:hover {
+  opacity: 0.9;
+}
+
+.cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .cta-section {
+    padding: 60px 24px;
+  
+  }
+
+  .cta-box {
+    padding: 50px 24px;
+    border-radius: 10px;
+  }
+}

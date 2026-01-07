@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+
+:root {
+  /* Font Family */
+  --font-primary:  "Funnel Display", sans-serif;
+  --heading-color : " #ff902f";
+  /* Font Weights */
+  --fw-thin: 100;
+  --fw-extralight: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  /* Font Styles */
+  --fs-normal: normal;
+  --fs-italic: italic;
+
+  /* Heading Font Settings */
+  --heading-font: var(--font-primary);
+  --heading-weight: var(--fw-bold);
+
+  /* Subheading Font Settings */
+  --subheading-font: var(--font-primary);
+  --subheading-weight: var(--fw-semibold);
+
+  /* Body Text Font Settings */
+  --body-font: var(--font-primary);
+  --body-weight: var(--fw-regular);
+}
+
+body{
+
+
+    font-family: var(--body-font);
+  font-weight: var(--body-weight);
+  font-style: var(--fs-normal);
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+   
+  background-color: #000;
+  
+
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+

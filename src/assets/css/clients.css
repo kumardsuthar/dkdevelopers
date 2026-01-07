@@ -1,0 +1,91 @@
+.clients-section {
+  padding: 50px 80px 60px 80px;
+  color: #fff;
+  max-width: 1200px;
+  margin: 10px auto
+}
+
+.clients-header {
+  max-width: 520px;
+  margin-bottom: 60px;
+}
+
+.clients-header h2 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  margin-bottom: 12px;
+}
+.clients-header h2 span{
+    color:  #ff902f;
+}
+
+.clients-header p {
+  opacity: 0.7;
+  font-size: 1rem;
+}
+
+/* GRID */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+/* CARD */
+.client-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 5px;
+  padding: 20px 14px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.client-card img {
+  height: 60px;
+  width: 100%;
+  border-radius: 14px;
+  object-fit: contain;
+
+  transition: all 0.3s ease;
+}
+
+/* NAME */
+.client-card span {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  opacity: 0.65;
+  color: #000;
+}
+
+/* HOVER */
+.client-card:hover {
+  border-color: rgba(255, 144, 47, 0.5);
+  background: #fff;
+  transform: translateY(-7px);
+}
+
+.client-card:hover img {
+  filter: grayscale(0%) brightness(1);
+  
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .clients-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .clients-section {
+    padding: 0px 24px;
+  }
+
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

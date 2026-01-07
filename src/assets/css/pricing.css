@@ -1,0 +1,125 @@
+.pricing-section {
+  padding: 50px 80px 20px 80px;
+  color: #fff;
+  max-width: 1200px;
+  margin: 10px auto
+}
+
+.pricing-header {
+  max-width: 520px;
+  margin-bottom: 70px;
+}
+
+.pricing-header h2 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  margin-bottom: 12px;
+}
+.pricing-header h2 span{
+    color:  #ff902f;
+}
+.pricing-header p {
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+/* GRID */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+/* CARD */
+.pricing-card {
+  position: relative;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.35s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 144, 47, 0.6);
+}
+
+/* HIGHLIGHT */
+.pricing-card.highlight {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 144, 47, 0.2),
+    rgba(255, 255, 255, 0.04)
+  );
+  border-color: rgba(255, 144, 47, 0.7);
+}
+
+/* BADGE */
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #ff902f;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* TEXT */
+.pricing-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.pricing-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+.pricing-price {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #ff902f;
+}
+
+/* FEATURES */
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.pricing-features li {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  opacity: 0.85;
+}
+
+/* BUTTON */
+.pricing-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  background: #ff902f;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .pricing-section {
+    padding: 40px 24px;
+  }
+}

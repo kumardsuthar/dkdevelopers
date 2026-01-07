@@ -1,0 +1,86 @@
+.services-section {
+  padding:20px 0px;
+  color: #fff;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.services-header {
+  max-width: 520px;
+  margin-bottom:40px;
+}
+
+.services-header h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.services-header h2 span{
+    color:  #ff902f;
+}
+
+.services-header p {
+  font-size: 1rem;
+  
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.service-card {
+
+    background: linear-gradient(
+    135deg,
+    rgba(255, 144, 47, 0.095),
+    rgba(255, 255, 255, 0.04)
+  );
+
+  border-radius: 5px;
+  padding: 20px 30px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  line-height: 1.6;
+
+    color: #808080;
+
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 144, 47, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .services-section {
+    padding: 0px 24px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
