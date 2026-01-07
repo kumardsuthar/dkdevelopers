@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../assets/css/header.css";
 import logoUrl from "../assets/media/White_logo_DK.png"
 export default function Header() {
@@ -15,11 +16,11 @@ export default function Header() {
 
           {/* DESKTOP NAV */}
           <nav className="nav-desktop">
-            <a href="/">Home</a>
-            <a href="/services">Services</a>
-            <a href="/work">Work</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/work">Work</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
           </nav>
 
           {/* CTA */}
