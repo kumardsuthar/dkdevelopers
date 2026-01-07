@@ -38,17 +38,18 @@ export default function Header() {
       </header>
 
       {/* MOBILE MENU */}
-      <div className={`mobile-menu ${open ? "show" : ""}`}>
-        <nav>
-          <a onClick={() => setOpen(false)} href="/">Home</a>
-          <a onClick={() => setOpen(false)} href="/services">Services</a>
-          <a onClick={() => setOpen(false)} href="/work">Work</a>
-          <a onClick={() => setOpen(false)} href="/about">About</a>
-          <a onClick={() => setOpen(false)} href="/contact">Contact</a>
-        </nav>
+<div className={`mobile-menu ${open ? "show" : ""}`}>
+  <nav>
+    <Link to="/" onClick={() => setOpen(false)}>Home</Link>
+    <Link to="/services" onClick={() => setOpen(false)}>Services</Link>
+    <Link to="/work" onClick={() => setOpen(false)}>Work</Link>
+    <Link to="/about" onClick={() => setOpen(false)}>About</Link>
+    <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
+  </nav>
 
-        <button className="mobile-cta">Get Free Consultation</button>
-      </div>
+  <button className="mobile-cta">Get Free Consultation</button>
+</div>
+
     </>
   );
 }
