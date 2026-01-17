@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/css/hero.css'
-import img01 from '../assets/media/website banner-nobg.svg'
+import img01 from '../assets/media/Website-Banner-nobg.svg'
 function WhoWeAre() {
   return (
     <div className='who-we-are'>
