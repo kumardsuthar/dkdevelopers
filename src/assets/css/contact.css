@@ -1,0 +1,144 @@
+/* HERO */
+.contact-hero {
+  min-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 24px 20px 24px;
+  text-align: center;
+}
+
+.contact-hero-content {
+  max-width: 720px;
+}
+
+.contact-hero-content h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.contact-hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #9a9a9a;
+}
+
+/* SECTION */
+.contact-section {
+  padding: 120px 80px 60px 80px;
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+/* MAIN GRID */
+.contact-grid {
+  display: grid;
+  grid-template-columns:  1fr;
+  gap: 40px;
+}
+
+/* FORM CARD */
+.contact-form-card {
+  background: #0a0a0a;
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.contact-form-card h2 {
+  color: #fff;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+}
+
+/* FORM */
+.contact-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form-card input,
+.contact-form-card textarea {
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+  color: #fff;
+  font-size: 0.95rem;
+
+}
+
+.contact-form-card textarea {
+  min-height: 120px;
+  resize: none;
+}
+.contact-form-card input:focus, .contact-form-card textarea:focus {
+  outline: 1px solid #ff902f26;
+}
+
+.contact-form-card input::placeholder,
+.contact-form-card textarea::placeholder {
+  color: #777;
+}
+
+.contact-form-card button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  background: #ff902f;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact-form-card button:hover {
+  transform: translateY(-3px);
+}
+
+/* INFO GRID */
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.contact-info-card {
+  background: #0a0a0a;
+  border-radius: 20px;
+  padding: 28px;
+  border: 1px solid rgba(255, 144, 47, 0.088);
+}
+
+.contact-info-card h3 {
+  color: #ff902f;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-info-card p {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-section {
+    padding: 80px 20px 20px 24px;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,37 @@
+.work-hero {
+  min-height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 24px;
+  text-align: center;
+}
+
+.work-hero-content {
+  max-width: 720px;
+}
+
+.work-hero-content h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.work-hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #9a9a9a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .work-hero {
+    min-height: fit-content;
+    padding: 80px 16px;
+  }
+
+  .work-hero-content p {
+    font-size: 1rem;
+  }
+}

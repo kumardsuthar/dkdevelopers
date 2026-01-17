@@ -1,11 +1,11 @@
 import React from 'react'
 import '../assets/css/hero.css'
-
+import img01 from '../assets/media/website banner-nobg.svg'
 function WhoWeAre() {
   return (
     <div className='who-we-are'>
         <div className="who-we-are-img">
-
+           <img src={img01} alt="logo" />
         </div>
       <h2>Who We Are </h2>
       <h4>digital-first team focused on building visibility, engagement, and growth.</h4>

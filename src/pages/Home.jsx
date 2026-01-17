@@ -8,6 +8,7 @@ import ScrollStack from '../components/ScrollStack'
 import CallToAction from '../components/CallToAction'
 import Pricing from '../components/Pricing'
 import Clients from '../components/ClientData'
+import { WhyUs } from '../components/WhyUs'
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
     {/* <CurveText/> */}
     <WhoWeAre/>
     <Service/>
+    <WhyUs/>
      <HowWeWork/>
      <ScrollStack/>
      <Pricing/>
