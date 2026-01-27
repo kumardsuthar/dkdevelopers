@@ -98,6 +98,7 @@
 .who-we-are-img {
   width: 100%;
   overflow: hidden;
+
 }
 
 .who-we-are-img img {
@@ -163,4 +164,33 @@
     height: 600px;
   
 }
+
+.heroicon01{
+   position: absolute;
+   left: 20px;
+   bottom: -26px;
+}
+.heroicon01 img{
+    height: 55px;
+    width: 100%;
+    object-fit: contain;
+}
+
+    .heroicon02 {
+        position: absolute;
+        right: 30px;
+        top: 38px;
+    }
+    .heroicon02 img{
+        height: 50px;
+        width: 100%;
+        object-fit: contain
+    }
+
+    .who-we-are-img {
+  width: 100%;
+  overflow: hidden;
+  margin: 50px 0px;
+}
+
 }
