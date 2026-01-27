@@ -98,7 +98,11 @@
 .who-we-are-img {
   width: 100%;
   overflow: hidden;
+  display: block !important;
 
+}
+.who-we-are-video{
+    display: none !important;
 }
 
 .who-we-are-img img {
@@ -139,6 +143,16 @@
     margin: 20px 5px;
       box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
         box-sizing: border-box;
+}
+
+@media (max-width:780px)
+{
+    .who-we-are-video{
+    display: block !important;
+}
+    .who-we-are-img{
+    display: none !important;
+}
 }
 
 @media (max-width: 640px)
