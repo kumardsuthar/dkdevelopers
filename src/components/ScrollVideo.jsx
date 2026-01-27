@@ -24,7 +24,7 @@ export default function ScrollVideo() {
   }, []);
 
   return (
-    <section style={{ height: "100vh", background: "#000" }}>
+    <section style={{ height: "50vh", background: "#000" }}>
       <video
         ref={videoRef}
         src={videoFile}
@@ -36,10 +36,7 @@ export default function ScrollVideo() {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          zIndex: "-1
+   
         }}
       />
     </section>
