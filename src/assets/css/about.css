@@ -123,7 +123,7 @@ p{
   line-height: 1.75;
   color: #9a9a9a;
 
-  text-align: justify;        /* ✅ KEY FIX */
+  text-align: left;        /* ✅ KEY FIX */
   max-width: 68ch;         /* ✅ PERFECT LINE LENGTH */
   letter-spacing: 0px;
 
