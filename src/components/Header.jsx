@@ -21,6 +21,7 @@ export default function Header() {
             <Link to="/work">Work</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
+            <Link to="/budget-planner">Budget Planner</Link>
           </nav>
 
           {/* CTA */}

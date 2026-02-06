@@ -1,7 +1,39 @@
-import React from 'react'
-import '../assets/css/contact.css'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
+import '../assets/css/contact.css';
 
 function ContactSec() {
+  const formRef = useRef();
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e) => {
+  e.preventDefault();
+
+  setLoading(true);
+
+  emailjs
+    .sendForm(
+      "service_orjltbf",
+      "template_h8h9v4i",
+      formRef.current,
+      "8Gk121rJGStogu-1J"
+    )
+    .then(
+      () => {
+        toast.success("Message sent successfully 🚀");
+        setLoading(false);
+        formRef.current.reset();
+      },
+      () => {
+        toast.error("Failed to send message ❌ Please try again.");
+        setLoading(false);
+      }
+    );
+};
+
+
   return (
     <>
       {/* HERO */}
@@ -23,13 +55,21 @@ function ContactSec() {
           <div className="contact-form-card">
             <h2>Send a Message</h2>
 
-            <form>
-              <input type="text" placeholder="Your Name" />
-              <input type="email" placeholder="Your Email" />
-              <input type="text" placeholder="Phone Number" />
-              <textarea placeholder="Tell us about your project"></textarea>
+            <form ref={formRef} onSubmit={sendEmail}>
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <input type="text" name="phone" placeholder="Phone Number" />
+              <textarea
+                name="message"
+                placeholder="Tell us about your project"
+                required
+              ></textarea>
 
-              <button type="submit">Submit</button>
+              <button type="submit" disabled={loading}>
+                {loading ? "Sending..." : "Submit"}
+              </button>
+
+              {status && <p className="form-status">{status}</p>}
             </form>
           </div>
 
@@ -58,9 +98,13 @@ function ContactSec() {
 
         </div>
       </section>
+      <Toaster
+  position="top-right"
+  reverseOrder={false}
+/>
+
     </>
   );
 }
 
-
-export default ContactSec
+export default ContactSec;

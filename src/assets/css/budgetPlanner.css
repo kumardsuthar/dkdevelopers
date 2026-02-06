@@ -1,0 +1,295 @@
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --bg-dark: #0e0e0e;
+  --card-bg: #151515;
+  --primary: #e37215;
+  --text-light: #ffffff;
+  --text-muted: #9a9a9a;
+  --border: #262626;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.planner-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  color: var(--text-light);
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.progress-wrap::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--border);
+  z-index: 0;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  width: 25%;
+}
+
+.step span {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--border);
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.step p {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.step.active span {
+  background: var(--primary);
+  color: #fff;
+}
+
+.step.active p {
+  color: #fff;
+}
+
+/* ===== STEP CARD ===== */
+.step-box {
+ border: 1px solid rgba(255, 255, 255, 0.06);
+    background: linear-gradient(135deg, /* rgba(255, 144, 47, 0.256), */ rgb(11, 11, 11));
+  border-radius: 8px;
+  padding: 20px 30px;
+  animation: fadeIn 0.4s ease;
+}
+
+.step-box h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* ===== OPTIONS GRID ===== */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  align-items: center;
+
+}
+
+/* ===== RADIO / CHECKBOX CARDS ===== */
+.option-card {
+  background: #101010;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  color: #b8b8b8;;
+}
+
+.option-card:hover {
+  border-color: var(--primary);
+}
+.option-card svg{
+  color: #fff;
+
+}
+.option-card span{
+  font-size: 14px;
+}
+.option-card.active {
+  background: rgba(108, 92, 231, 0.1);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.option-card input {
+  display: none;
+}
+
+/* ===== SELECT & INPUT ===== */
+select,
+input {
+  width: 100%;
+  background: #101010;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  color: #fff;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+select:focus,
+input:focus {
+  border-color: var(--primary);
+}
+
+/* ===== BUTTONS ===== */
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-back {
+  background: #222;
+  color: #fff;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-next,
+.submit-btn {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ===== SUMMARY ===== */
+.summary-box {
+  background: #101010;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.summary-box h2 {
+  font-size: 32px;
+  color: var(--primary);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .progress-wrap p {
+    display: none;
+  }
+
+  .planner-container {
+    margin: 30px auto;
+  }
+}
+.error-text {
+  color: #ff7675;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* SAME ANIMATION FOR ALL STEPS */
+.animate {
+  animation: fadeIn 0.35s ease;
+}
+
+/* ===== PRICE TAG ===== */
+.price-tag {
+  background: linear-gradient(135deg, #e37215, #ff9f43);
+  border-radius: 14px;
+  padding: 20px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.price-tag svg , .price-tag span{
+  color: #fff;
+}
+.price-tag h2 {
+  margin-left: auto;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;;
+}
+
+/* ===== NOTE ===== */
+.budget-note {
+  color: #9a9a9a;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* ===== INPUT GRID ===== */
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+  
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #101010;
+  border: 1px solid #262626;
+ padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 0px !important;
+}
+.input-box svg{
+  color: #fff;
+  font-size: 20px;
+}
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .input-grid {
+    grid-template-columns: 1fr;
+  }
+}
