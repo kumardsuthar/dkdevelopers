@@ -81,10 +81,10 @@ const featureIcons = {
 
   /* ================= BUDGET ================= */
   const prices = {
-    projectType: { static: 15000, dynamic: 25000, ecommerce: 40000, webapp: 60000 },
-    features: { admin: 8000, auth: 6000, payment: 10000, seo: 5000 },
-    design: { basic: 0, standard: 8000, premium: 15000 },
-    timeline: { normal: 0, fast: 5000, urgent: 10000 },
+    projectType: { static: 6999, dynamic: 8999, ecommerce: 24999, webapp: 34999 },
+    features: { admin: 8000, auth: 3000, payment: 5000, seo: 50000 },
+    design: { basic: 0, standard: 4000, premium: 8000 },
+    timeline: { normal: 0, fast: 2000, urgent: 5000 },
   };
 
   const calculateTotal = () => {
