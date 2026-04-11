@@ -1,0 +1,127 @@
+.careers-page {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HERO */
+.careers-hero {
+  padding: 100px 0 20px;
+  text-align: center;
+}
+
+.careers-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.careers-hero h1 span {
+  color: #ff902f;
+}
+
+.careers-hero p {
+  font-size: 1.15rem;
+  color: #808080;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* GRID SECTION */
+.careers-section {
+  padding: 40px 0;
+}
+
+/* NO JOBS STATE */
+.no-jobs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.no-jobs-card {
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 40px;
+  padding: 80px 40px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.no-jobs-icon {
+  color: #ff902f;
+  margin-bottom: 30px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+}
+
+.no-jobs-card h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.no-jobs-card p {
+  color: #606060;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.no-jobs-action {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.no-jobs-action p {
+  color: #909090;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.email-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ff902f;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.email-link:hover {
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .no-jobs-card {
+    padding: 60px 24px;
+    border-radius: 30px;
+  }
+
+  .no-jobs-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .email-link {
+    font-size: 1.1rem;
+  }
+}

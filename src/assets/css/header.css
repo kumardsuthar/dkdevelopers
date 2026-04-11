@@ -13,7 +13,7 @@
 
 .header-inner {
   max-width: 1200px;
-  margin:0px auto 0px auto;
+  margin: 0px auto 0px auto;
   padding: 10px 50px;
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@
 }
 
 /* LOGO */
-.logo img{
+.logo img {
   height: 40px;
 }
 
@@ -52,6 +52,11 @@
   border-radius: 999px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.header-cta a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* MENU TOGGLE */
@@ -124,6 +129,7 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+
   .nav-desktop,
   .header-cta {
     display: none;
@@ -136,15 +142,16 @@
   .header-inner {
     padding: 16px 24px;
   }
-  .logo img{
-  height: 25px;
-}
+
+  .logo img {
+    height: 25px;
+  }
 
 
 }
 
 @media (max-width: 640px) {
-.header{
+  .header {
     top: 10px;
-}
+  }
 }

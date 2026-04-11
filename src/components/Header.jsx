@@ -21,11 +21,12 @@ export default function Header() {
             <Link to="/work">Work</Link>
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
-            <Link to="/budget-planner">Budget Planner</Link>
+            <Link to="/opening">Opening</Link>
+         
           </nav>
 
           {/* CTA */}
-          <button className="header-cta">Start Project</button>
+          <button className="header-cta ">   <Link to="/budget-planner">Budget Planner</Link></button>
 
           {/* MOBILE TOGGLE */}
           <div
@@ -45,6 +46,7 @@ export default function Header() {
     <Link to="/services" onClick={() => setOpen(false)}>Services</Link>
     <Link to="/work" onClick={() => setOpen(false)}>Work</Link>
     <Link to="/about" onClick={() => setOpen(false)}>About</Link>
+    <Link to="/opening" onClick={() => setOpen(false)}>Opening</Link>
     <Link to="/budget-planner" onClick={() => setOpen(false)}>Budget Planner</Link>
     <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
   </nav>

@@ -8,6 +8,7 @@ import Work from "./pages/Work";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
 import BudgetPlannerPage from "./pages/BudgetPlannerPage";
+import Careers from "./pages/Careers";
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
 <Route path="/work" element={<Work/>} />
 <Route path="/contact" element={<Contact/>} />
 <Route path="/budget-planner" element={<BudgetPlannerPage />} />
+        <Route path="/opening" element={<Careers />} />
       </Routes>
-   <Footer/>
+      <Footer />
     </>
   );
 }

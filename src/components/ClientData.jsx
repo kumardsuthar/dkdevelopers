@@ -8,6 +8,8 @@ import client06 from "../assets/media/client06.webp";
 import client07 from "../assets/media/client07.png";
 import client08 from "../assets/media/client08.jpeg";
 import client09 from "../assets/media/client09.jpeg";
+import client10 from "../assets/media/amclogo.png";
+import client11 from "../assets/media/logosun.png";
 
 /* Just add logo file + name */
 const clients = [
@@ -20,6 +22,8 @@ const clients = [
   { name: "SmartQR", logo: client07 },
   { name: "The Trade Tower", logo: client08 },
   { name: "Atmanirbhar Academy", logo: client09 },
+  { name: "AMC Solor", logo: client10 },
+  { name: "Sun Pathology", logo: client11 },
 ];
 
 

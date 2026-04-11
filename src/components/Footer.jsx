@@ -1,5 +1,6 @@
 import "../assets/css/footer.css";
 import logoUrl from "../assets/media/White_logo_DK.png";
+import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -7,11 +8,19 @@ export default function Footer() {
       <div className="footer-top">
         {/* BRAND */}
         <div className="footer-brand">
-         <img src={logoUrl} alt="Dk Developers"/>
+          <img src={logoUrl} alt="Dk Developers" />
           <p>
             Building modern websites and digital marketing solutions that help
-            businesses grow online.
+            businesses grow and succeed in the digital world.
           </p>
+          <div className="footer-social">
+            <a href="https://www.instagram.com/dkdevelopers_agency/" target="_blank" rel="noreferrer">
+              <Instagram size={20} />
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <Facebook size={20} />
+            </a>
+          </div>
         </div>
 
         {/* LINKS */}
@@ -20,6 +29,7 @@ export default function Footer() {
           <a href="/">Home</a>
           <a href="/about">About</a>
           <a href="/services">Services</a>
+          <a href="/work">Work</a>
           <a href="/contact">Contact</a>
         </div>
 
@@ -34,9 +44,14 @@ export default function Footer() {
         {/* CONTACT */}
         <div className="footer-contact">
           <h4>Contact</h4>
-          <p>Email: hello@dk.dev</p>
-          <p>Phone: +91 9XXXXXXXXX</p>
-          <p>Location: India</p>
+          <div className="contact-item">
+            <Mail size={16} />
+            <a href="mailto:dkdev.help@gmail.com">dkdev.help@gmail.com</a>
+          </div>
+          <div className="contact-item">
+            <MapPin size={16} />
+            <p>India</p>
+          </div>
         </div>
       </div>
 
