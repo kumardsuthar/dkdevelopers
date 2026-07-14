@@ -147,7 +147,7 @@ function ScrollStack() {
 
                 </div>
                 {/* link */}
-                <a href="https://avon-tattoo-supply.com/" target="_blank" className="dark-cta">View Project</a>
+                <a href="https://avontattoosupply.com/" target="_blank" className="dark-cta">View Project</a>
               </div>
               <figure>
                 <img src={img06} alt="card Five" />
