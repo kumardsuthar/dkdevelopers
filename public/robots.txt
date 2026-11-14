@@ -1,0 +1,6 @@
+# Google Search Engine & Web Crawlers
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://dkdevelopers.agency/sitemap.xml
