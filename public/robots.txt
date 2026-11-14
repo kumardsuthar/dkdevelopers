@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap Location
-Sitemap: https://www.dkdevagency.in/sitemap.xml
+Sitemap: https://dkdevagency.in/sitemap.xml
