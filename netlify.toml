@@ -1,4 +1,22 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Ensure proper Content-Type headers for search engines
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=UTF-8"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=UTF-8"
+
+# SPA Fallback - static files in dist/ will be served directly first, only unmatched routes fallback to index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
